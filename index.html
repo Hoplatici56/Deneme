@@ -3,20 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Web Sitem</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Teknoverse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: black;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        #welcome h1 {
+            font-size: 3rem;
+        }
+        #about {
+            background-color: #111;
+            flex-direction: column;
+        }
+        .photos {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome To Teknoverse!</h1>
-        <p>New Day New Verse.</p>
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Ana Sayfa</a></li>
+                <li><a href="#about">Biz Kimiz</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>This website is supported by GitHub Pages.</p>
-        <a href="https://github.com">GitHub'a Git</a>
-    </main>
-    <footer>
-        <p>© 2025 - Teknolco</p>
-    </footer>
+
+    <section id="welcome">
+        <h1>Welcome To Teknoverse</h1>
+    </section>
+
+    <section id="about">
+        <h2>Biz Kimiz</h2>
+        <p>Buradaki yazıyı istediğin gibi düzenleyebilirsin. Fotoğraf ekleme yerleri aşağıda.</p>
+        <div class="photos">
+            <img src="https://via.placeholder.com/200x150" alt="Foto 1">
+            <img src="https://via.placeholder.com/200x150" alt="Foto 2">
+            <img src="https://via.placeholder.com/200x150" alt="Foto 3">
+        </div>
+    </section>
 </body>
 </html>
